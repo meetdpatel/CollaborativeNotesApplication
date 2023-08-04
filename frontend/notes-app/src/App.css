@@ -1,0 +1,145 @@
+.App {
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #44a7f1;
+  border-radius: 10px;
+}
+
+.App-main {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: lightgreen; */
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar {
+  width: 20%;
+  /* min-width: 180px; */
+  background-color: #8EB0AC;
+  height: 90vh;
+  overflow-y: hidden;
+  display: block;
+  box-shadow: 12px 2px 25px -4px rgba(82, 82, 82, 0.31);
+  z-index: 1;
+}
+
+.sidebar-btn-custom {
+  background-color: transparent !important;
+  color: black !important;
+  border: none;
+  outline: #44a7f1 solid 1px !important;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.sidebar-btn-custom:hover {
+  background-color: #44a7f1 !important;
+  color: black !important;
+}
+
+.groupWorkspace {
+  width: 80%;
+  height: 90vh;
+  background-color: #C2DCDC;
+  /* background-image: url("./images/background.png");
+  background-repeat: no-repeat; */
+}
+
+.scroll {
+  overflow-y: scroll;
+  max-width: 100%;
+  overflow-x: hidden;
+  /* need to change to adjust to screen height */
+  height: 500px;
+}
+
+.react-pdf__Page__canvas {
+  margin: 0 auto;
+  width: 100% !important;
+  height: 100% !important;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+.right {
+  text-align: right;
+  margin-right: 3%;
+}
+
+.groupTab {
+  border-style: solid;
+  border-width: 2px;
+  border: 1px solid #44a7f1;
+  margin: 10px 10px;
+  border-radius: 15px;
+}
+.groupTab:hover {
+  background-color: #44a7f1;
+  cursor: pointer;
+  color: white;
+}
+
+.navbar-custom {
+  box-shadow: 0px 28px 25px -13px rgba(150, 150, 150, 0.24);
+}
+.nav-link {
+  border-bottom: 2px solid #6DC4BB;
+}
+.nav-link:hover {
+  border-bottom: 2px solid #44a7f1;
+}
+
+/* comment text area design here */
+.comment-textarea {
+  box-sizing: border-box;
+  border: 1px solid #44a7f1;
+  border-radius: 10px;
+}
+.comment-textarea:focus {
+  outline: none;
+  border: 1px solid #44a7f1;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .App {
+    height: auto;
+  }
+
+  .App-main {
+    height: auto;
+  }
+  /* .sidebar {
+      min-width: 100%;
+      height: 100%;
+  } */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
